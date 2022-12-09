@@ -1,0 +1,142 @@
+:root {
+    --CorEscuro: #202124;
+    --CorClaro: #fafafa;
+    --CorInterface: #30363f
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0px;
+    background-color: transparent;
+    color: var(--CorClaro);
+    box-sizing: border-box;
+    font-family: inherit;
+    font-weight: inherit
+}
+
+body {
+    background-color: var(--CorEscuro)
+}
+
+header {
+    margin: 5px auto auto;
+    max-width: 480px;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    background-color: var(--CorInterface);
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+header #title {
+    flex-grow: 1;
+    margin-left: 32px;
+    text-align: center
+}
+
+header #title h1 {
+    font-size: 24px;
+    text-transform: uppercase
+}
+
+header #reload {
+    position: relative
+}
+
+header #reload #btn {
+    border: 0;
+    border-radius: 16px;
+    height: 32px;
+    width: 32px;
+    background-color: transparent;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    justify-content: center
+}
+
+header #reload #btn:hover {
+    background-color: var(--CorInterface)
+}
+
+header #reload #btn svg {
+    background-color: transparent;
+    width: 24px;
+    height: 24px;
+    fill: currentColor
+}
+
+main {
+    margin: auto;
+    max-width: 480px;
+    padding: 15px
+}
+
+main .label {
+    font-size: 15px;
+    text-transform: uppercase
+}
+
+main section#Info {
+    background-color: var(--CorInterface);
+    border-radius: 5px;
+    padding: 10px
+}
+
+main section input#Cor {
+    background-color: var(--CorInterface);
+    border: 3px solid var(--CorClaro);
+    border-radius: 5px;
+    font-size: 1.25em;
+    margin: 10px 0;
+    padding: 10px 15px;
+    width: 100%
+}
+
+main section#HUD {
+    background-color: var(--CorInterface);
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 15px
+}
+
+main section#HUD section#title-instrucao {
+    background-color: transparent;
+    align-items: center;
+    display: flex;
+    padding-bottom: 5px
+}
+
+main section#HUD svg {
+    background-color: transparent;
+    width: 16px;
+    height: 16px;
+    fill: currentColor
+}
+
+main section#HUD #title-instrucao h2 {
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 100%;
+    margin: 0;
+    padding-left: 10px
+}
+
+main section#HUD p {
+    background-color: transparent;
+    font-size: 16px;
+    margin: 10px 0
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: right
+}
